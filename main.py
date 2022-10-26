@@ -1,6 +1,6 @@
-from gui import StartGui, MainGUI
+from gui import StartGui, MainGUI, LoginGUI
 
 
-
-caminho = StartGui() # Iniciando uma interface para captar o caminho do documento excel
-MainGUI(caminho)
+if LoginGUI() == True:
+    caminho = StartGui() # Iniciando uma interface para captar o caminho do documento excel
+    MainGUI(caminho)
